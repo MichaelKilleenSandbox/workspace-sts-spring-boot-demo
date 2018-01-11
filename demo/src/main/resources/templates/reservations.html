@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+<H1>Reservations</H1>
+<div th:each="r : ${reservations}">
+	<div>
+		<b th:text="${r.id}">ID</b> - 
+		<span th:text="${r.reservationName}">Reservation Name</span>
+	</div>
+</div>
+
+</body>
+</html>
